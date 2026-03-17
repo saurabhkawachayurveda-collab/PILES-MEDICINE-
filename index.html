@@ -14,9 +14,14 @@ body{font-family:Arial;margin:0;background:#f6f3ea;color:#333}
 .section-title{text-align:center;margin:40px 0 20px}
 .btn{background:#c62828;color:white;padding:12px 20px;border:none;border-radius:6px;font-size:16px;cursor:pointer}
 .call{position:fixed;bottom:15px;right:15px;background:#2e7d32;color:white;padding:14px 20px;border-radius:40px;text-decoration:none;font-weight:bold}
-form input,form textarea{width:100%;padding:10px;margin:8px 0;border:1px solid #ccc;border-radius:6px}
 .review{background:white;padding:15px;border-radius:8px;margin:10px 0;display:flex;gap:15px;align-items:center;box-shadow:0 1px 5px rgba(0,0,0,0.1)}
-.review img{width:60px;height:60px;border-radius:50%;object-fit:cover}
+.review img{width:60px;height:60px;border-radius:50%}
+
+/* Responsive iframe */
+.form-box{width:100%;height:600px}
+@media(max-width:600px){
+.form-box{height:500px}
+}
 </style>
 </head>
 
@@ -56,12 +61,15 @@ form input,form textarea{width:100%;padding:10px;margin:8px 0;border:1px solid #
 
 <h2 class="section-title">Free Consultation</h2>
 
-<form action="YOUR_GOOGLE_SCRIPT_URL" method="post">
-<input type="text" name="name" placeholder="आपका नाम" required>
-<input type="tel" name="mobile" placeholder="मोबाइल नंबर" required>
-<textarea name="problem" placeholder="आपकी समस्या"></textarea>
-<button class="btn">Free Doctor Consultation</button>
-</form>
+<!-- ✅ TALLY FORM EMBED -->
+<iframe 
+src="https://tally.so/r/1AEE1O" 
+class="form-box" 
+frameborder="0" 
+marginheight="0" 
+marginwidth="0" 
+title="Fatty Liver Form">
+</iframe>
 
 <h2 class="section-title">मरीजों का अनुभव</h2>
 
